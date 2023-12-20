@@ -16,15 +16,21 @@ To write a program to find the square root of a number.
 
 ## Program:
 ```
-/*
-Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
-*/
+#program to find the square root for the given number.
+#Devloped by: Vinnush kumar L S
+#RegisterNumber: 23012349
+def newton_method(number,number_iters = 100):
+    a=float(number)
+    for i in range(number_iters):
+        number=0.5*(number+a/number)
+    return number
+a=int(input())
+print("Square root of the number:",newton_method(a))
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
+![image](https://github.com/vinnush147/Square-root-of-a-number/assets/147139234/d9b5aa17-87ce-4606-b14c-1031019c042a)
+
 
 
 ## Result:
